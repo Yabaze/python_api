@@ -3,7 +3,7 @@ from flask import jsonify , request
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-s = [{'cool':'yabaze'}] 
+sample = [{'cool':'yabaze'}] 
 
 books = [
     {'id': 0,
