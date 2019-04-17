@@ -43,17 +43,12 @@ def api_id():
     else:
         return "Error: No id field provided. Please specify an id."
 
-    # Create an empty list for our results
     results = []
 
-    # Loop through the data and match results that fit the requested ID.
-    # IDs are unique, but other fields might return many results
     for book in books:
         if book['id'] == id:
             results.append(book)
 
-    # Use the jsonify function from Flask to convert our list of
-    # Python dictionaries to the JSON format.
     return jsonify(results)
 
 
